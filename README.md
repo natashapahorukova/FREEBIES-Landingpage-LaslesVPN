@@ -3,7 +3,6 @@ The work was written using the following technologies:
   SCSS,
   BEM,
   Parcel,
-  NPN,
   Flexbox module,
   Components.
  
