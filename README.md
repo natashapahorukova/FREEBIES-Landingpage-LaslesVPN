@@ -1,10 +1,10 @@
 # FREEBIES-Landingpage-LaslesVPN
 The work was written using the following technologies:
-  SCSS;
-  BEM;
-  Parcel;
-  NPN;
-  Flexbox module;
+  SCSS,
+  BEM,
+  Parcel,
+  NPN,
+  Flexbox module,
   Components.
  
 <img src='preview.png'>
