@@ -1,0 +1,52 @@
+ .hero {
+   @include flexible(center, space-between);
+   padding: 50px 10px;
+   &__content {
+     @include flexible(null, null, column);
+     width: 50%;
+   }
+   &__title {
+     margin-bottom: 20px;
+     @include font(500, $xxxl-text, 70px, $black-color);
+   }
+   &__title--bolded {
+     @include font(700, $xxxl-text, 70px, $black-color);
+   }
+   &__text {
+     margin-bottom: 50px;
+     @include font(400, $sm-text, 30px, $gray-color);
+   }
+   &__link {
+     width: 250px;
+     height: 60px;
+     margin-bottom: 83px;
+     padding: 17px 78px;
+     @include font(700, $sm-text, 25px, $main-color);
+     background: $error-color;
+     border-radius: 10px;
+   }
+   &__icon {
+     width: 560px;
+     height: 375px;
+     margin-left: 10px;
+   }
+   @media screen and (max-width: $lg-breakpoint) {
+     &__icon {
+       width: 460px;
+       height: 325px;
+     }
+   }
+   @media screen and(max-width: $md-breakpoint) {
+     &__icon {
+       display: none;
+     }
+     &__content {
+       @include flexible(center, center, column);
+       width: 100%;
+     }
+     &__title,
+     &__text {
+       text-align: center;
+     }
+   }
+ }

@@ -1,0 +1,48 @@
+ .nav {
+   @include flexible(center, space-between);
+   height: 120px;
+   padding: 50px 10px;
+   &__logotype {
+     @include flexible(center);
+   }
+   &__icon {
+     width: 35px;
+     height: 35px;
+     margin-right: 10px;
+   }
+   &__text {
+     @include font(500, $lg-text, 24px, $black-color);
+   }
+   &__nav__text--bolded {
+     font-weight: 700;
+   }
+   &__link {
+     margin-right: 40px;
+     @include font(400, $sm-text, 19px, $gray-color);
+   }
+   &__sign-in {
+     margin-right: 30px;
+     @include font(500, $sm-text, 19px, $black-color);
+   }
+   &__sign-up {
+     width: 150px;
+     height: 45px;
+     padding: 13px 45px;
+     @include font(500, $sm-text, 19px, $error-color);
+     border: 1px solid $error-color;
+     box-sizing: border-box;
+     border-radius: 50px;
+   }
+   &__burger-btn {
+     display: none;
+   }
+   @media screen and(max-width: $md-breakpoint) {
+     &__container,
+     &__login {
+       display: none;
+     }
+     &__burger-btn {
+       display: block;
+     }
+   }
+ }

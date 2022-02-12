@@ -1,0 +1,70 @@
+.footer {
+  padding: 180px 10px 100px 10px;
+  background: #F8F8F8;
+  .container {
+    @include flexible(null, space-between);
+  }
+  &__content {
+    width: 40%;
+  }
+  &__logotype {
+    @include flexible(center);
+    margin-bottom: 26px;
+  }
+  &__icon {
+    width: 35px;
+    height: 36px;
+    margin-right: 10px;
+  }
+  &__text {
+    @include font(500, $lg-text, 24px, $black-color);
+  }
+  &__text--bolded {
+    font-weight: 700;
+  }
+  &__description {
+    margin-bottom: 30px;
+    @include font(400, $sm-text, 30px, $gray-color);
+  }
+  &__description {
+    font-weight: 500;
+  }
+  &__icons {
+    @include flexible(center);
+  }
+  &__link-icon {
+    width: 33px;
+    height: 33px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+  &__copyright {
+    @include font(400, $sm-text, 30px, #AFB5C0);
+  }
+  &__copyright--bolded {
+    font-weight: 500;
+  }
+  &__lists {
+    @include flexible(null, space-between);
+    width: 45%;
+  }
+  &__title {
+    margin-bottom: 20px;
+    @include font(500, $md-text, 30px, $black-color);
+  }
+  &__item-link {
+    margin-bottom: 10px;
+    @include font(400, $sm-text, 30px, $gray-color);
+  }
+  @media screen and (max-width:$md-breakpoint) {
+    .container {
+      @include flexible(null, start, column);
+    }
+    &__copyright {
+      margin-bottom: 40px;
+    }
+    &__list {
+      margin-right: 100px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.features {
+  @include flexible(center, space-between);
+  padding: 50px 10px;
+  &__icon {
+    width: 508px;
+    height: 414px;
+    margin-right: 10px;
+  }
+  &__content {
+    @include flexible(null, null, column);
+    width: 50%;
+    padding-left: 150px;
+  }
+  &__content-title {
+    margin-bottom: 20px;
+    @include font(500, $xxl-text, 50px, $black-color);
+  }
+  &__content-description {
+    margin-bottom: 20px;
+    @include font(400, $sm-text, 30px, $gray-color);
+  }
+  &__content-item {
+    display: flex;
+  }
+  &__content-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  &__content-text {
+    margin-bottom: 15px;
+    @include font(400, $xs-text, 30px, $gray-color);
+  }
+  @media screen and (max-width:$md-breakpoint) {
+    &__content {
+      width: 100%;
+      padding-left: 10px;
+    }
+    &__icon {
+      display: none;
+    }
+  }
+  @media screen and (max-width:$sm-breakpoint) {
+    padding: 50px 10px 5px 10px;
+  }
+}
